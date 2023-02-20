@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    /*
+    1. Return the Sum of Two Numbers. 
+Write a function that takes two numbers as arguments and returns their sum.
+samples below
+addition(3, 2) ➞ 5
+addition(-3, -6) ➞ -9
+addition(7, 3) ➞ 10
+*/
+console.log("Question 1");
+    function sumOfTwoNumber(a,b){
+        let result = a+b;
+        return result;
+    }
+    let myResult1 = sumOfTwoNumber(3,2);
+    let myResult2 = sumOfTwoNumber(-3,-6);
+    let myResult3 = sumOfTwoNumber(7,3);
+    console.log(myResult1);
+    console.log(myResult2);
+    console.log(myResult3);
+/*
+2. Return the Next Number from the Integer Passed
+Write a function that takes a number as an argument, increases the number by 1 and returns the result.
+samples below
+nextNumber(0) ➞ 1
+nextNumber(9) ➞ 10
+nextNumber(-3) ➞ -2 
+*/
+console.log("Question 2");
+function nextNumber(number){
+        let result = number+1;
+        return result;
+    }
+    let myNextNumber1 = nextNumber(0);
+    let myNextNumber2 = nextNumber(9);
+    let myNextNumber3 = nextNumber(-3);
+    console.log(myNextNumber1);
+    console.log(myNextNumber2);
+    console.log(myNextNumber3);
+/*
+3. Convert Age to Days
+Write a function that takes the age in years and returns the age in days.
+samples below
+calcAge(65) ➞ 23725
+calcAge(0) ➞ 0
+calcAge(20) ➞ 7300
+*/
+console.log("Question 3");
+function days(age){
+        let result = age * 365;
+        return result;
+    }
+    let myAge1 = days(65);
+    let myAge2 = days(0);
+    let myAge3 = days(20);
+    console.log(myAge1);
+    console.log(myAge2);
+    console.log(myAge3);
+
+/*
+4. Power Calculator
+Write a function that takes voltage and current and returns the calculated power. NB: power = voltage * current
+samples below
+circuitPower(230, 10) ➞ 2300
+circuitPower(110, 3) ➞ 330
+circuitPower(480, 20) ➞ 9600
+*/
+console.log("Question 4");
+function circuitPower(voltage, current){
+        let power = voltage * current;
+        return power;
+    }
+    let myCircuitPower1= circuitPower(230, 10);
+    let myCircuitPower2 = circuitPower(110, 3);
+    let myCircuitPower3 = circuitPower(480,20);
+    console.log(myCircuitPower1);
+    console.log(myCircuitPower2);
+    console.log(myCircuitPower3);
+/*
+/*
+5. Return Something to Me!
+Write a function that returns the string "something" joined with a space " " and the given argument a.
+sample below
+giveMeSomething("is better than nothing") ➞ "something is better than nothing"
+giveMeSomething("Bob Jane") ➞ "something Bob Jane"
+giveMeSomething("something") ➞ "something something"
+*/
+console.log("Question 5");
+function giveMeTreasure(treasure){
+        let result = treasure + " is better than brass";
+        return result;
+    }
+    let myTreasure1 = giveMeTreasure("Diamond");
+    let myTreasure2 = giveMeTreasure("Gold");
+    let myTreasure3 = giveMeTreasure("Ruby");
+    console.log(myTreasure1);
+    console.log(myTreasure2);
+    console.log(myTreasure3);
+    /*
+    /*
+6. Concatenate First and Last Name into One String
+Write a function that takes 2 parameters firstName and lastName, return a single string in the format "last, first."
+sample below
+concatName("Johnny", "Bravo") ➞ "Last, First"
+concatName("John", "Doe") ➞ "Doe, John"
+concatName("Mary", "Jane") ➞ "Jane, Mary"
+*/
+console.log("Question 6");
+function concatName(firstName, lastName){
+    let result = firstName + ", " + lastName;
+    return result;
+}
+console.log(concatName("Johnny", "Bravo"));
+console.log(concatName("John", "Doe"));
+console.log(concatName("Mary", "Jane"));
+/*
+7. Return the Remainder from Two Numbers
+Write a function that takes two numbers as arguments and returns the remainder of the first number divided by the second number.
+sample below
+remainder(1, 3) ➞ 1
+remainder(3, 4) ➞ 3
+remainder(-9, 45) ➞ -9
+*/
+console.log("Question 7");
+function remainder(firstNumber, secondNumber){
+    let result = firstNumber % secondNumber;
+    return result;
+}
+console.log(remainder(1, 3));
+console.log(remainder(3, 4));
+console.log(remainder(-9, 45));
+/*
+/*
+8. Return Negative
+Write a function that takes a number as an argument and returns negative of that number.
+ Return negative numbers without any change.
+sample below
+returnNegative(4) ➞ -4
+returnNegative(15) ➞ -15
+returnNegative(-4) ➞ -4
+returnNegative(0) ➞ 0
+*/
+console.log("Question 8");
+function negativeNumber(number){
+    if(Math.sign(number)=== -1 | number === 0){
+        return number
+    }
+    return number * -1;
+}
+console.log(negativeNumber(4));
+console.log(negativeNumber(15));
+console.log(negativeNumber(-4));
+console.log(negativeNumber(0));
+/*
+9. String and Number Conversions
+Write a function that takes a string and returns it as an integer.
+sample below
+intToString(4) ➞ "4"
+stringToInt("4") ➞ 4
+*/
+console.log("Question 9");
+function intToString(num){
+    if(typeof num==="number"){
+        return num.toString();
+    }else if(typeof num==="string"){
+    return Number(num);
+    }
+}
+ let myConversion= intToString(4);
+ let myConversion1= intToString("4");
+ console.log(myConversion);
+ console.log(myConversion1);
+console.log(typeof(myConversion));
+console.log(typeof(myConversion1));
+/*
+10. Four Passengers and a Driver (Here a bit problem solving, you have to think of the solution before you code)
+A typical car can hold four passengers and one driver, allowing five people to travel around. Given n number of people, return how many cars are needed to seat everyone comfortably.
+sample below
+
+carsNeeded(5) ➞ 1
+carsNeeded(11) ➞ 3
+carsNeeded(0) ➞ 0
+*/
+console.log("Question 10");
+function carsNeeded(numbersOfPassenger){
+let myResult = numbersOfPassenger/5;
+let numberOfCar = Math.ceil(myResult)
+return numberOfCar;
+}
+console.log(carsNeeded(5));
+console.log(carsNeeded(11));
+console.log(carsNeeded(0));
+
+/*
+11. Return the Total Number of Parameters (Here's another bit of problem solving)
+Write a function that returns the total number of parameters passed in.
+sample below
+numberArgs("a", "b", "c") ➞ 3
+numberArgs(10, 20, 30, 40, 50) ➞ 5
+numberArgs(x, y) ➞ 2
+numberArgs() ➞ 0
+*/
+console.log("Question 11");
+function numberArgs(){
+    let result = arguments.length;
+    return result;
+}
+console.log(numberArgs("a", "b", "c"));
+console.log(numberArgs(10, 20, 30, 40, 50));
+console.log(numberArgs("x", "y"));
+console.log(numberArgs());
+/*
+12. WordCharWord
+Write a function that takes 2 argument. The function will put the first argument(that should be a character),
+ in the begining and the end of the second argument, a string.
+sample below
+wordCharWord("R", "javascript is fun") ➞ "R javascript is fun R"
+wordCharWord("#", "hello world!") ➞ "# hello world! #"
+wordCharWord("his", "lets jump on code ") ➞ "# lets jump on code #"
+*/
+console.log("Question 12");
+function wordCharWord(firstArgs, secondArgs){
+let result = firstArgs + " , "+ vcjhsecondArgs;
+return result;
+}
+console.log(wordCharWord("R", "javascript is fun"));
+console.log(wordCharWord("#", "hello world!"))
+console.log(wordCharWord("his", "lets jump on code "))
+/*
+function 
+/*
+13. Stuttering Function
+Write a function that stutters a word as if someone is struggling to read it. The first two letters are repeated twice with an ellipsis ... and space after each, and then the word is pronounced with a question mark ?.
+sample below
+stutter("incredible") ➞ "eerrm... errrm... incredible?"
+stutter("enthusiastic") ➞ "eerrm... eerrm... enthusiastic?"
+stutter("outstanding") ➞ "eerrm... eerrm... outstanding?"
+*/
+console.log("Question 13");
+function stutter(myWords){
+    let result= "eerrm... eerrm... " + myWords + "?";
+    return result
+}
+let finalWord1= stutter("incredible");
+let finalWord2= stutter("enthusiastic");
+let finalWord3= stutter("outstanding");
+console.log(finalWord1);
+console.log(finalWord2);
+console.log(finalWord3);
+
+/*
+14. Write a funtion that returns the type of a parameter passed to it.
+sample below
+typeOf(1) ➞ "number"
+typeOf("a") ➞ "string"
+typeOf("The man ran away") ➞ "string"
+*/
+console.log("Question 14");
+function typeOf(x){
+    let myFindings = typeof(x)
+    return myFindings;
+}
+console.log(typeOf(1));
+console.log(typeOf("a"));
+console.log(typeOf("The man ran away"));
+/*
+15. Write a function that takes a number as an argument and returns the square root of that number.
+sample below
+squareRoot(9) ➞ 3
+squareRoot(16) ➞ 4
+squareRoot(25) ➞ 5
+*/
+console.log("Question 15");
+function squareRoot (number){
+ let mySquareRoot = Math.sqrt(number)
+ return mySquareRoot;
+}
+console.log(squareRoot(9));
+console.log(squareRoot(16));
+console.log(squareRoot(25));
+</script>
+</body>
+</html>
+    
